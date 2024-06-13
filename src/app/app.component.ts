@@ -1,13 +1,17 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { ReactiveFormsModule } from '@angular/forms';
+import { RouterModule, RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
+import { NewuserComponent } from './newuser/newuser.component';
+
+import { ListofuserComponent } from './listofuser/listofuser.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [ReactiveFormsModule, NewuserComponent,ListofuserComponent, RouterOutlet, RouterLink, RouterLinkActive, RouterModule],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'Todo_app';
+  
 }

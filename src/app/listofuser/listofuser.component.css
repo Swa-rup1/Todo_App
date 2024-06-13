@@ -1,0 +1,19 @@
+.Action-btn{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  
+}
+
+button{
+  padding: 2px 8px;
+  border: none;
+
+  border-radius: 2px;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+

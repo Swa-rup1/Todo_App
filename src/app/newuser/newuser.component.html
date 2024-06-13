@@ -1,0 +1,71 @@
+<form [formGroup]="TodoForm" (ngSubmit)="onSubmit()" >
+  <!-- First Name -->
+  <div class="formitem">
+    <div class="form-group">
+      <label for="first-name">First Name :</label>
+      <input
+        type="text"
+        name="first-name"
+        id="firstname"
+        formControlName="firstName"
+        placeholder="Enter your First Name"
+        required
+      />
+    </div>
+
+    <!-- Last Name -->
+    <div class="form-group">
+      <label for="last-name">Last Name :</label>
+      <input
+        type="text"
+        name="last-name"
+        id="lastname"
+        formControlName="lastName"
+        placeholder="Enter your last name"
+      />
+    </div>
+
+    <!--Designation -->
+    <div class="form-group">
+      <label for="designation">Designation :</label>
+      <select name="designation" id="designation" formControlName="Designation">
+        <option value="-1" >--Select a Option--</option>
+        <option value="Frontend">Front-End</option>
+        <option value="Backend">Back-End</option>
+        <option value="UIX">UI/UX</option>
+        <option value="Mobile">Mobile Development</option>
+
+      </select>
+    </div>
+
+    <!-- Email -->
+    <div class="form-group">
+      <label for="Email">Email :</label>
+      <input type="email" name="Email" id="Email" formControlName="Email" />
+    </div>
+
+    <!-- Address -->
+    <div class="form-group">
+      <label for="address">Address : </label>
+      <input
+        type="text"
+        name="address"
+        id="address"
+        formControlName="Address"
+      />
+    </div>
+
+    <!-- Phone -->
+    <div class="form-group">
+      <label for="phone">Phone :</label>
+      <input type="text" name="phone" id="phone" formControlName="Phone" />
+    </div>
+  </div>
+  <div class="button">
+    <button class="btn btn-success" id="button-submit">Submit</button>
+
+    <button type="reset" class="btn btn-secondary reset" id="button-reset">
+      Reset
+    </button>
+  </div>
+</form>
