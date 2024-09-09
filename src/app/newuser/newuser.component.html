@@ -1,7 +1,7 @@
-<form [formGroup]="TodoForm" (ngSubmit)="onSubmit()" >
+<form [formGroup]="TodoForm" (ngSubmit)="onSubmit()">
   <!-- First Name -->
   <div class="formitem">
-    <div class="form-group">
+    <div class="form-group ">
       <label for="first-name">First Name :</label>
       <input
         type="text"
@@ -14,7 +14,7 @@
     </div>
 
     <!-- Last Name -->
-    <div class="form-group">
+    <div class="form-group ">
       <label for="last-name">Last Name :</label>
       <input
         type="text"
@@ -26,15 +26,14 @@
     </div>
 
     <!--Designation -->
-    <div class="form-group">
+    <div class="form-group ">
       <label for="designation">Designation :</label>
       <select name="designation" id="designation" formControlName="Designation">
-        <option value="-1" >--Select a Option--</option>
+        <option value="-1">--Select a Option--</option>
         <option value="Frontend">Front-End</option>
         <option value="Backend">Back-End</option>
         <option value="UIX">UI/UX</option>
         <option value="Mobile">Mobile Development</option>
-
       </select>
     </div>
 

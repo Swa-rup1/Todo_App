@@ -1,13 +1,3 @@
 {
-  "users": [
-    {
-      "id": "bcc4",
-      "firstName": "Swarup",
-      "lastName": "Bamjan",
-      "Designation": "Frontend",
-      "Email": "bamjanswarup666@gmail.com",
-      "Address": "kjsdcdsk",
-      "Phone": "987456321"
-    }
-  ]
+  "users": []
 }

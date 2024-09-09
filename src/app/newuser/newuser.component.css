@@ -9,12 +9,13 @@
 
 .form-group {
   display: grid;
+
   row-gap: 5px;
 }
 
-input {
+/* input {
   width: 60%;
-}
+} */
 
 .button {
   display: flex;
@@ -24,7 +25,7 @@ input {
   gap: 1rem;
 }
 
-ul{
+ul {
   margin: 2rem;
 }
 
